@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoPular Page</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h3 align='right'>NEWS</h3>
+        </div>
+        <div class="row">
+            <!-- INI BERITA YG TAYANG -->
+            <div class="col-md-9">
+                <div>
+                    <h3>Maxime et consequatur ab suscipit et in.</h3>
+                </div>
+                <address>
+                    Yogyakarta, 31 January 2021
+                </address>
+                <div>
+                    <img src="image1.jpg" alt="" class="img-fluid">
+                </div>
+                <div>
+                    <p>
+                        Eum fugit sint omnis ipsam est sunt placeat. Voluptate iure magni magni. Et nesciunt deleniti
+                        laborum aut. Voluptatem dolorem inventore quia culpa sapiente voluptas id eos. Ea sint velit
+                        nisi consequatur fuga et rerum. Consequatur ut occaecati.
+
+                        Explicabo eveniet est omnis consequatur earum at ipsa. Qui nisi est quasi est possimus repellat
+                        iure amet aut. Amet adipisci assumenda perferendis quia vitae nisi repellendus.
+
+                        Quis saepe numquam. Id consequuntur rerum vel voluptatem est quia totam delectus. Voluptatem ut
+                        voluptas enim ipsa. Eligendi laudantium totam sit reiciendis.
+                    </p>
+                </div>
+                <div>
+                    <!-- Hyperlink ke popular3 -->
+                    <p class="hyperlinkNews">Lihat juga: <a href="popular3.html">Iste ullam voluptates velit qui
+                            consequuntur
+                            cupiditate necessitatibus.</a>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Sint porro et natus id et. Architecto id perspiciatis libero nihil qui deserunt delectus earum.
+                        Consequuntur quae modi harum et omnis id nihil aut eum. Facere qui et deleniti quibusdam minus
+                        nesciunt voluptas.
+                    </p>
+                </div>
+                <div>
+                    <p>Author: <a href="">penulis-1</a></p>
+                </div>
+            </div>
+
+            <!-- INI BERITA POPULAR -->
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <h3>POPULAR</h3>
+                <br>
+                <!-- POPULAR #1 -->
+                <div class="row">
+                    <img src="image1.jpg" alt="popular-1" class="img-fluid"><br>
+                    <div class="popular">
+                        <!-- hyperlink ke popular1 -->
+                        <a href="popular1.html">Maxime et consequatur ab suscipit et in.
+                        </a>
+                    </div>
+                </div>
+                <!-- POPULAR #2 -->
+                <div>
+                    <img src="image2.jpg" alt="popular-2" class="img-fluid"><br>
+                    <div class="popular">
+                        <!-- hyperlik ke popular2 -->
+                        <a href="popular2.html">Suscipit mollitia nesciunt culpa debitis nihil consequatur.
+                        </a>
+                    </div>
+                </div>
+                <!-- POPULAR #3 -->
+                <div>
+                    <img src="image3.jpg" alt="popular-3" class="img-fluid"><br>
+                    <div class="popular">
+                        <!-- hyperlink ke popular3  -->
+                        <a href="popular3.html">Iste ullam voluptates velit qui consequuntur cupiditate necessitatibus.
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BUTTON VIEW MORE -->
+                <div class="view-more">
+                    <!-- hyperlik ke popular page  -->
+                    <a href="" class="hyperlinkLatest">View More...</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="comments">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h5>Komentar</h5><br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Type here..."></textarea>
+                    <br>
+                    <button class="kirim-btn">Kirim</button>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-2">
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const commentInput = document.querySelector('.form-control')
+            const kirimBtn = document.querySelector('.kirim-btn')
+            const comments = document.querySelector('.comments')
+
+            kirimBtn.onclick = () => {
+                const input = commentInput.value
+                const p = document.createElement('p')
+                p.innerHTML = input
+                comments.append(p)
+                commentInput.value
+            }
+        </script>
+    </div>
+    <style>
+        .title {
+            padding: 20px 0px 20px 0px;
+        }
+
+        address {
+            opacity: 50%;
+        }
+
+        img {
+            padding: 0px 0px 15px 0px;
+        }
+
+        h3,
+        h5 {
+            color: #253D59;
+        }
+
+        .hyperlinkNews {
+            color: red;
+            background-color: #bdbbbb;
+            padding: 10px 20px 10px 20px;
+        }
+
+        .comments {
+            margin-top: 50px;
+            padding: 10px 0px 10px 0px;
+            background-color: #f7e1cf;
+        }
+
+        .popular {
+            padding: 10px 0px 10px 10px;
+        }
+
+        a {
+            color: #253D59;
+            text-decoration: none;
+        }
+
+        .text-trending {
+            color: #505050;
+            padding-top: 10%;
+        }
+
+        .col-1 {
+            color: #253D59;
+        }
+
+        .hyperlinkLatest {
+            color: white;
+        }
+
+        .view-more {
+            background-color: #253D59;
+            padding: 2px 10px 2px 20px;
+            text-decoration: none;
+        }
+    </style>
+</body>
+
+</html>
