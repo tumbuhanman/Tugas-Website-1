@@ -1,0 +1,15 @@
+{
+  "name": "0.0.1",
+  "version": "1.0.0",
+  "description": "This Webserver for Learning purposes",
+  "main": "home.js",
+  "scripts": {
+    "start": "node home.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clemens Ferry",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
