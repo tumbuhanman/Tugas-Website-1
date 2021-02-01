@@ -1,0 +1,218 @@
+<%- include('header') %>
+<body>
+    <%- include('navbar') %>
+    
+    <!-- Content -->
+    <div class="container-fluid">
+        
+        <!--Top Content-->
+        <div class="row home-top-content">
+            
+            <div class="col-1">
+            </div>
+
+            <div class="col-10 align-self-center">
+                <!--Header-->
+                <div class="header d-flex justify-content-end">
+                    <h4 class="blue-font">HOME</h4>
+                </div>
+                <!--/.Header-->
+
+                <!--Headlines-->
+                <div class="sub-header">
+                    <h5 class="blue-font red-underline">Headlines</h5>
+                </div>
+
+                <!--Carousel-->
+                <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselCaptions" data-slide-to="0"></li>
+                        <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselCaptions" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src=<%= news4[1] %> class="d-block w-100" alt="">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="carousel-title"><a href="newsPopular-1" class="text-decoration-none carousel-link"><%= news4[0] %></a></h4>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src=<%= news5[1] %> class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="carousel-title"><a href="newsPopular-2" class="text-decoration-none carousel-link"><%= news5[0] %></a></h4>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src=<%= news6[1] %> class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="carousel-title"><a href="newsPopular-3" class="text-decoration-none carousel-link"><%= news5[0] %></a></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!--/.Carousel-->
+
+                <!--/.Headlines-->
+            </div>
+
+            <div class="col-1">
+            </div>
+
+        </div>
+        <!--/.Top Content-->
+
+        <!--Bottom Content-->
+        <div class="row home-bottom-content">
+
+            <div class="col-1">
+            </div>
+
+            <!-- Latest News -->
+            <div class="col-8 home-latest-news">
+
+                <div class="sub-header d-flex justify-content-start">
+                    <h5 class="blue-font red-underline">Latest News</h5>
+                </div>
+
+                <div class="container-fluid" id="home-news">
+                    <div class="row home-latest-news-item">
+                        <div class="col-2 pl-0 align-self-center blue-font">
+                            <h5>1</h5>
+                            <h5>February</h5>
+                            <h5>2021</h5>
+                        </div>
+                        <div class="col-10 pr-0 align-self-center home-latest-news-item-preview">
+                            <h5>
+                                <a href="newsLatest-1" class="text-decoration-none blue-font"><%= news1[0] %></a>
+                            </h5>
+                            <p><%= news1[2] %></p>
+                        </div>
+                    </div>
+
+                    <div class="row home-latest-news-item">
+                        <div class="col-2 pl-0 align-self-center blue-font">
+                            <h5>31</h5>
+                            <h5>January</h5>
+                            <h5>2021</h5>
+                        </div>
+                        <div class="col-10 pr-0 align-self-center home-latest-news-item-preview">
+                            <h5>
+                                <a href="newsLatest-2" class="text-decoration-none blue-font"><%= news2[0] %></a>
+                            </h5>
+                            <p><%= news2[2] %></p>
+                        </div>
+                    </div>
+
+                    <div class="row home-latest-news-item">
+                        <div class="col-2 pl-0 align-self-center blue-font">
+                            <h5>30</h5>
+                            <h5>January</h5>
+                            <h5>2021</h5>
+                        </div>
+                        <div class="col-10 pr-0 align-self-center home-latest-news-item-preview">
+                            <h5>
+                                <a href="newsLatest-3" class="text-decoration-none blue-font"><%= news3[0] %></a>
+                            </h5>
+                            <p><%= news3[2] %></p>
+                        </div>
+                    </div>
+
+                    <div class="row home-latest-news-item">
+                        <div class="col-2 pl-0 align-self-center blue-font">
+                            <h5>29</h5>
+                            <h5>January</h5>
+                            <h5>2021</h5>
+                        </div>
+                        <div class="col-10 pr-0 align-self-center home-latest-news-item-preview">
+                            <h5>
+                                <a href="newsPopular-1" class="text-decoration-none blue-font"><%= news4[0] %></a>
+                            </h5>
+                            <p><%= news4[2] %></p>
+                        </div>
+                    </div>
+
+                    <div class="row home-latest-news-item">
+                        <div class="col-2 pl-0 align-self-center blue-font">
+                            <h5>28</h5>
+                            <h5>January</h5>
+                            <h5>2021</h5>
+                        </div>
+                        <div class="col-10 pr-0 align-self-center home-latest-news-item-preview">
+                            <h5>
+                                <a href="newsPopular-2" class="text-decoration-none blue-font"><%= news5[0] %></a>
+                            </h5>
+                            <p><%= news5[2] %></p>
+                        </div>
+                    </div>
+
+                    <div class="row home-latest-news-item">
+                        <div class="col-2 pl-0 align-self-center blue-font">
+                            <h5>27</h5>
+                            <h5>January</h5>
+                            <h5>2021</h5>
+                        </div>
+                        <div class="col-10 pr-0 align-self-center home-latest-news-item-preview">
+                            <h5>
+                                <a href="newsPopular-3" class="text-decoration-none blue-font"><%= news6[0] %></a>
+                            </h5>
+                            <p><%= news6[2] %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Content -->
+            <div class="col-2 home-side-content">
+                <div class="container-fluid">
+
+                    <!-- Advertisement -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="sub-header">
+                                <h5 class="blue-font red-underline">Advertisement</h5>
+                            </div>
+                            <a href="https://brainstation.io/course/online/remote-digital-marketing-bootcamp" target="_blank">
+                                <img src="assets/images/advertisement.jpg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Visitor Counter -->
+                    <div class="row visitor-content">
+                        <div class="col">
+                            <div class="sub-header">
+                                <h5 class="blue-font red-underline">Visitor Counter</h5>
+                            </div>
+                            <h5 class="blue-font visitor-border"><%= count %></h5>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-1">
+            </div>
+        </div>
+    </div>
+
+    <%- include('footer') %>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+</html>
